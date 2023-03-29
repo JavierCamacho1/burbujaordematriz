@@ -1,0 +1,55 @@
+﻿<Window x:Class="Burbuja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Burbuja"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid x:Name="grid1" Margin="75,53,496,157" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="grid2" Margin="457,53,97,157" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button x:Name="btmcargar" Content="CARGAR" HorizontalAlignment="Left" Margin="498,358,0,0" VerticalAlignment="Top" Height="48" Width="140" Click="btmcargar_Click"/>
+        <Button x:Name="btmordenar" Content="BURBUJA" HorizontalAlignment="Left" Margin="498,290,0,0" VerticalAlignment="Top" Height="48" Width="140" Click="btmordenar_Click"/>
+        <Button x:Name="btmseleccion" Content="SELECCION" HorizontalAlignment="Left" Margin="327,53,0,0" VerticalAlignment="Top" Height="25" Width="113" Click="btmseleccion_Click"/>
+        <Button x:Name="btminsercion" Content="INSERCION" HorizontalAlignment="Left" Margin="327,95,0,0" VerticalAlignment="Top" Height="29" Width="113" Click="btminsercion_Click"/>
+        <Button x:Name="btmshell" Content="SHELL" HorizontalAlignment="Left" Margin="327,136,0,0" VerticalAlignment="Top" Height="29" Width="113" Click="btmshell_Click"/>
+        <Button x:Name="btmmezcla" Content="MEZCLA" HorizontalAlignment="Left" Margin="327,188,0,0" VerticalAlignment="Top" Height="29" Width="113" Click="btmmezcla_Click"/>
+        <Button x:Name="btmrapido" Content="RAPIDO" HorizontalAlignment="Left" Margin="327,234,0,0" VerticalAlignment="Top" Height="29" Width="113" Click="btmrapido_Click"/>
+        <Label Content="Dato:" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top" Height="24" Width="45"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Margin="55,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="busquedasecuencial" Content="Busqueda Secuencial" HorizontalAlignment="Left" Margin="190,319,0,0" VerticalAlignment="Top" Height="26" Width="114" Click="busquedasecuencial_Click"/>
+        <Button x:Name="busquedabinaria" Content="Busqueda Binaria" HorizontalAlignment="Left" Margin="190,356,0,0" VerticalAlignment="Top" Height="26" Width="114" Click="busquedabinaria_Click"/>
+
+    </Grid>
+</Window>
